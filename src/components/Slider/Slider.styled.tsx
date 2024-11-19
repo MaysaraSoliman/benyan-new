@@ -1,6 +1,7 @@
 "use client";
 
 import styled from "styled-components";
+//mm
 
 export const StyledSlider = styled.section`
   padding: 80px 0;
