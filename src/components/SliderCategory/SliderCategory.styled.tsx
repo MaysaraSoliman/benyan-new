@@ -40,6 +40,13 @@ export const StyledSlider = styled.section`
     right: 5%;
   }
 
+  .slick-prev::before {
+    color: #34564e !important;
+  }
+  .slick-next::before {
+    color: #34564e !important;
+  }
+
   .slider-box {
     width: 95%;
     max-height: 100%;

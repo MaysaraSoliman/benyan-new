@@ -1,7 +1,6 @@
 "use client";
 
 import styled from "styled-components";
-//mm
 
 export const StyledSlider = styled.section`
   padding: 80px 0;
@@ -39,6 +38,13 @@ export const StyledSlider = styled.section`
   }
   .slick-next {
     right: 5%;
+  }
+
+  .slick-prev::before {
+    color: #34564e !important;
+  }
+  .slick-next::before {
+    color: #34564e !important;
   }
 
   .slider-box {

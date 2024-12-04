@@ -3,7 +3,6 @@
 import styled from "styled-components";
 
 export const StyledMainFooter = styled.div`
-  /* background-color: #f3f2f3; */
   padding: 0 0 60px;
   color: var(--color-text-primary);
   .logo {
