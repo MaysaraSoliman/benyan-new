@@ -6,6 +6,7 @@ import Image from "next/image";
 import LogoImage from "../../../../public/images/logo/logo_white (1).png";
 // import { RxHamburgerMenu } from "react-icons/rx";
 import MenuDrawer from "./MenuDrawer/MenuDrawer";
+import { Link } from "@/i18n/routing";
 
 const DesktopHeader = () => {
   return (
@@ -17,9 +18,9 @@ const DesktopHeader = () => {
             <GoPerson className="icon" />
           </div>
         </div>
-        <div className="logo-col">
+        <Link href={"/"} className="logo-col">
           <Image src={LogoImage} alt="logo image" />
-        </div>
+        </Link>
         <div className="drawer-col">
           {/* <RxHamburgerMenu className="icon" />
            */}

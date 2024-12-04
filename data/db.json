@@ -1,0 +1,769 @@
+{
+    "users": [
+      { "id": 1, "name": "John Doe", "email": "john.doe@example.com", "age": 30 },
+      { "id": 2, "name": "Jane Smith", "email": "jane.smith@example.com", "age": 25 },
+      { "id": 3, "name": "Alice Johnson", "email": "alice.johnson@example.com", "age": 28 }
+    ],
+    "products": [
+        {
+            "id": 1839,
+            "barcode": "DJ0000500",
+            "name": {
+              "en": "خاتم الماس ذهب ابيض",
+              "ar": "خاتم الماس ذهب ابيض"
+            },
+            "branch_id": 3052,
+            "branch_name": "فرع الشعلة",
+            "branch_code": "SH",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 23220.000,
+              "tag_price": 23220.000,
+              "cost": 7740.000,
+              "tax_percentage": 0.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Diamond Jewellery",
+              "ar": "مجوهرات ألماسية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "General",
+              "ar": "عام"
+            },
+            "gemstones": {
+              "en": "Diamond Jewellery",
+              "ar": "مجوهرات جديدة"
+            },
+            "weight": "8.16g",
+            "stock_status": "InStock",
+            "images": [
+              "/images/data/image-1.jpg",
+              "/images/data/image-2.jpg",
+              "/images/data/image-3.jpg"
+            ],
+            "created_at": "2024-12-02"
+          },
+          {
+            "id": 1840,
+            "barcode": "DJ0000501",
+            "name": {
+              "en": "خاتم سوار من الذهب الأصفر",
+              "ar": "خاتم سوار من الذهب الأصفر"
+            },
+            "branch_id": 3053,
+            "branch_name": "فرع الرياض",
+            "branch_code": "RY",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 18000.000,
+              "tag_price": 18000.000,
+              "cost": 5000.000,
+              "tax_percentage": 5.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Gold Jewellery",
+              "ar": "مجوهرات ذهبية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Luxury",
+              "ar": "فاخرة"
+            },
+            "gemstones": {
+              "en": "Ruby",
+              "ar": "روبي"
+            },
+            "weight": "10.00g",
+            "stock_status": "OutOfStock",
+            "images": [
+              "/images/data/image-2.jpg"
+            ],
+            "created_at": "2024-12-03"
+          },
+          {
+            "id": 1841,
+            "barcode": "DJ0000502",
+            "name": {
+              "en": "سوار الماس",
+              "ar": "سوار الماس"
+            },
+            "branch_id": 3054,
+            "branch_name": "فرع مكة",
+            "branch_code": "MK",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 45000.000,
+              "tag_price": 45000.000,
+              "cost": 12000.000,
+              "tax_percentage": 5.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Diamond Jewellery",
+              "ar": "مجوهرات ألماسية"
+            },
+            "material": {
+              "en": "Bracelet",
+              "ar": "سوار"
+            },
+            "brand": {
+              "en": "Exclusive",
+              "ar": "حصري"
+            },
+            "gemstones": {
+              "en": "Diamond",
+              "ar": "ألماس"
+            },
+            "weight": "15.20g",
+            "stock_status": "InStock",
+            "images": [
+               "/images/data/image-3.jpg"
+            ],
+            "created_at": "2024-12-04"
+          },
+          {
+            "id": 1842,
+            "barcode": "DJ0000503",
+            "name": {
+              "en": "خاتم لؤلؤ",
+              "ar": "خاتم لؤلؤ"
+            },
+            "branch_id": 3055,
+            "branch_name": "فرع جدة",
+            "branch_code": "JD",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 15000.000,
+              "tag_price": 15000.000,
+              "cost": 6000.000,
+              "tax_percentage": 0.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Pearl Jewellery",
+              "ar": "مجوهرات لؤلؤية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Elegant",
+              "ar": "أنيق"
+            },
+            "gemstones": {
+              "en": "Pearl",
+              "ar": "لؤلؤ"
+            },
+            "weight": "7.00g",
+            "stock_status": "InStock",
+            "images": [
+               "/images/data/image-4.jpg"
+            ],
+            "created_at": "2024-12-05"
+          },
+          {
+            "id": 1843,
+            "barcode": "DJ0000504",
+            "name": {
+              "en": "خاتم الماس جديد",
+              "ar": "خاتم الماس جديد"
+            },
+            "branch_id": 3056,
+            "branch_name": "فرع الدمام",
+            "branch_code": "DM",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 25000.000,
+              "tag_price": 25000.000,
+              "cost": 9000.000,
+              "tax_percentage": 0.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Diamond Jewellery",
+              "ar": "مجوهرات ألماسية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Luxury",
+              "ar": "فاخرة"
+            },
+            "gemstones": {
+              "en": "Diamond",
+              "ar": "ألماس"
+            },
+            "weight": "7.5g",
+            "stock_status": "InStock",
+            "images": [
+             "/images/data/image-5.jpg"
+            ],
+            "created_at": "2024-12-06"
+          },
+          {
+            "id": 1844,
+            "barcode": "DJ0000505",
+            "name": {
+              "en": "سوار ذهب أصفر",
+              "ar": "سوار ذهب أصفر"
+            },
+            "branch_id": 3057,
+            "branch_name": "فرع المدينة",
+            "branch_code": "CD",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 22000.000,
+              "tag_price": 22000.000,
+              "cost": 8000.000,
+              "tax_percentage": 5.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Gold Jewellery",
+              "ar": "مجوهرات ذهبية"
+            },
+            "material": {
+              "en": "Bracelet",
+              "ar": "سوار"
+            },
+            "brand": {
+              "en": "General",
+              "ar": "عام"
+            },
+            "gemstones": {
+              "en": "Ruby",
+              "ar": "روبي"
+            },
+            "weight": "9.5g",
+            "stock_status": "OutOfStock",
+            "images": [
+              "/images/data/image-6.jpg"
+            ],
+            "created_at": "2024-12-07"
+          },
+          {
+            "id": 1845,
+            "barcode": "DJ0000506",
+            "name": {
+              "en": "خاتم فضة",
+              "ar": "خاتم فضة"
+            },
+            "branch_id": 3058,
+            "branch_name": "فرع الجبيل",
+            "branch_code": "JB",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 10000.000,
+              "tag_price": 10000.000,
+              "cost": 4000.000,
+              "tax_percentage": 0.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Silver Jewellery",
+              "ar": "مجوهرات فضية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Standard",
+              "ar": "قياسي"
+            },
+            "gemstones": {
+              "en": "None",
+              "ar": "لا يوجد"
+            },
+            "weight": "6.5g",
+            "stock_status": "InStock",
+            "images": [
+              "/images/data/image-7.jpg"
+            ],
+            "created_at": "2024-12-08"
+          },
+          {
+            "id":  1846,
+            "barcode": "DJ0000507",
+            "name": {
+              "en": "سوار لؤلؤ",
+              "ar": "سوار لؤلؤ"
+            },
+            "branch_id": 3059,
+            "branch_name": "فرع الطائف",
+            "branch_code": "TF",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 8000.000,
+              "tag_price": 8000.000,
+              "cost": 3000.000,
+              "tax_percentage": 0.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Pearl Jewellery",
+              "ar": "مجوهرات لؤلؤية"
+            },
+            "material": {
+              "en": "Bracelet",
+              "ar": "سوار"
+            },
+            "brand": {
+              "en": "Elegant",
+              "ar": "أنيق"
+            },
+            "gemstones": {
+              "en": "Pearl",
+              "ar": "لؤلؤ"
+            },
+            "weight": "5.8g",
+            "stock_status": "InStock",
+            "images": [
+               "/images/data/image-8.png"
+            ],
+            "created_at": "2024-12-09"
+          },
+          {
+            "id": 1847,
+            "barcode": "DJ0000508",
+            "name": {
+              "en": "خاتم بلاتين",
+              "ar": "خاتم بلاتين"
+            },
+            "branch_id": 3060,
+            "branch_name": "فرع الخبر",
+            "branch_code": "KB",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 35000.000,
+              "tag_price": 35000.000,
+              "cost": 15000.000,
+              "tax_percentage": 10.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Platinum Jewellery",
+              "ar": "مجوهرات بلاتينية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Exclusive",
+              "ar": "حصري"
+            },
+            "gemstones": {
+              "en": "Diamond",
+              "ar": "ألماس"
+            },
+            "weight": "11.7g",
+            "stock_status": "InStock",
+            "images": [
+              "/images/data/image-9.png"
+            ],
+            "created_at": "2024-12-10"
+          },
+          {
+            "id": 1849,
+            "barcode": "DJ0000508",
+            "name": {
+              "en": "خاتم بلاتين",
+              "ar": "خاتم بلاتين"
+            },
+            "branch_id": 3060,
+            "branch_name": "فرع الخبر",
+            "branch_code": "KB",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 35000.000,
+              "tag_price": 35000.000,
+              "cost": 15000.000,
+              "tax_percentage": 10.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Platinum Jewellery",
+              "ar": "مجوهرات بلاتينية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Exclusive",
+              "ar": "حصري"
+            },
+            "gemstones": {
+              "en": "Diamond",
+              "ar": "ألماس"
+            },
+            "weight": "11.7g",
+            "stock_status": "InStock",
+            "images": [
+              "/images/data/image-10.png"
+            ],
+            "created_at": "2024-12-10"
+          },
+          {
+            "id": 1850,
+            "barcode": "DJ0000508",
+            "name": {
+              "en": "خاتم بلاتين",
+              "ar": "خاتم بلاتين"
+            },
+            "branch_id": 3060,
+            "branch_name": "فرع الخبر",
+            "branch_code": "KB",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 35000.000,
+              "tag_price": 35000.000,
+              "cost": 15000.000,
+              "tax_percentage": 10.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Platinum Jewellery",
+              "ar": "مجوهرات بلاتينية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Exclusive",
+              "ar": "حصري"
+            },
+            "gemstones": {
+              "en": "Diamond",
+              "ar": "ألماس"
+            },
+            "weight": "11.7g",
+            "stock_status": "InStock",
+            "images": [
+              "/images/data/image-11.png"
+            ],
+            "created_at": "2024-12-10"
+          },
+          {
+            "id": 1851,
+            "barcode": "DJ0000508",
+            "name": {
+              "en": "خاتم بلاتين",
+              "ar": "خاتم بلاتين"
+            },
+            "branch_id": 3060,
+            "branch_name": "فرع الخبر",
+            "branch_code": "KB",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 35000.000,
+              "tag_price": 35000.000,
+              "cost": 15000.000,
+              "tax_percentage": 10.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Platinum Jewellery",
+              "ar": "مجوهرات بلاتينية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Exclusive",
+              "ar": "حصري"
+            },
+            "gemstones": {
+              "en": "Diamond",
+              "ar": "ألماس"
+            },
+            "weight": "11.7g",
+            "stock_status": "InStock",
+            "images": [
+              "/images/data/image-12.png"
+            ],
+            "created_at": "2024-12-10"
+          },
+          {
+            "id": 1852,
+            "barcode": "DJ0000508",
+            "name": {
+              "en": "خاتم بلاتين",
+              "ar": "خاتم بلاتين"
+            },
+            "branch_id": 3060,
+            "branch_name": "فرع الخبر",
+            "branch_code": "KB",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 35000.000,
+              "tag_price": 35000.000,
+              "cost": 15000.000,
+              "tax_percentage": 10.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Platinum Jewellery",
+              "ar": "مجوهرات بلاتينية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Exclusive",
+              "ar": "حصري"
+            },
+            "gemstones": {
+              "en": "Diamond",
+              "ar": "ألماس"
+            },
+            "weight": "11.7g",
+            "stock_status": "InStock",
+            "images": [
+              "/images/data/image-12.png"
+            ],
+            "created_at": "2024-12-10"
+          },
+          {
+            "id": 1853,
+            "barcode": "DJ0000508",
+            "name": {
+              "en": "خاتم بلاتين",
+              "ar": "خاتم بلاتين"
+            },
+            "branch_id": 3060,
+            "branch_name": "فرع الخبر",
+            "branch_code": "KB",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 35000.000,
+              "tag_price": 35000.000,
+              "cost": 15000.000,
+              "tax_percentage": 10.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Platinum Jewellery",
+              "ar": "مجوهرات بلاتينية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Exclusive",
+              "ar": "حصري"
+            },
+            "gemstones": {
+              "en": "Diamond",
+              "ar": "ألماس"
+            },
+            "weight": "11.7g",
+            "stock_status": "InStock",
+            "images": [
+              "/images/data/image-13.png"
+            ],
+            "created_at": "2024-12-10"
+          },
+          {
+            "id": 1854,
+            "barcode": "DJ0000508",
+            "name": {
+              "en": "خاتم بلاتين",
+              "ar": "خاتم بلاتين"
+            },
+            "branch_id": 3060,
+            "branch_name": "فرع الخبر",
+            "branch_code": "KB",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 35000.000,
+              "tag_price": 35000.000,
+              "cost": 15000.000,
+              "tax_percentage": 10.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Platinum Jewellery",
+              "ar": "مجوهرات بلاتينية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Exclusive",
+              "ar": "حصري"
+            },
+            "gemstones": {
+              "en": "Diamond",
+              "ar": "ألماس"
+            },
+            "weight": "11.7g",
+            "stock_status": "InStock",
+            "images": [
+              "/images/data/image-13.png"
+            ],
+            "created_at": "2024-12-10"
+          },
+          {
+            "id": 1855,
+            "barcode": "DJ0000508",
+            "name": {
+              "en": "خاتم بلاتين",
+              "ar": "خاتم بلاتين"
+            },
+            "branch_id": 3060,
+            "branch_name": "فرع الخبر",
+            "branch_code": "KB",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 35000.000,
+              "tag_price": 35000.000,
+              "cost": 15000.000,
+              "tax_percentage": 10.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Platinum Jewellery",
+              "ar": "مجوهرات بلاتينية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Exclusive",
+              "ar": "حصري"
+            },
+            "gemstones": {
+              "en": "Diamond",
+              "ar": "ألماس"
+            },
+            "weight": "11.7g",
+            "stock_status": "InStock",
+            "images": [
+              "/images/data/image-14.png"
+            ],
+            "created_at": "2024-12-10"
+          },
+          {
+            "id": 1856,
+            "barcode": "DJ0000508",
+            "name": {
+              "en": "خاتم بلاتين",
+              "ar": "خاتم بلاتين"
+            },
+            "branch_id": 3060,
+            "branch_name": "فرع الخبر",
+            "branch_code": "KB",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 35000.000,
+              "tag_price": 35000.000,
+              "cost": 15000.000,
+              "tax_percentage": 10.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Platinum Jewellery",
+              "ar": "مجوهرات بلاتينية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Exclusive",
+              "ar": "حصري"
+            },
+            "gemstones": {
+              "en": "Diamond",
+              "ar": "ألماس"
+            },
+            "weight": "11.7g",
+            "stock_status": "InStock",
+            "images": [
+              "/images/data/image-15.png"
+            ],
+            "created_at": "2024-12-10"
+          },
+          {
+            "id": 1857,
+            "barcode": "DJ0000508",
+            "name": {
+              "en": "خاتم بلاتين",
+              "ar": "خاتم بلاتين"
+            },
+            "branch_id": 3060,
+            "branch_name": "فرع الخبر",
+            "branch_code": "KB",
+            "pricing_details": {
+              "id": 0,
+              "barcode": null,
+              "price": 35000.000,
+              "tag_price": 35000.000,
+              "cost": 15000.000,
+              "tax_percentage": 10.00,
+              "currency": "SAR"
+            },
+            "category": {
+              "en": "Platinum Jewellery",
+              "ar": "مجوهرات بلاتينية"
+            },
+            "material": {
+              "en": "Ring",
+              "ar": "خاتم"
+            },
+            "brand": {
+              "en": "Exclusive",
+              "ar": "حصري"
+            },
+            "gemstones": {
+              "en": "Diamond",
+              "ar": "ألماس"
+            },
+            "weight": "11.7g",
+            "stock_status": "InStock",
+            "images": [
+              "/images/data/image-16.png"
+            ],
+            "created_at": "2024-12-10"
+          }
+         
+    ]
+}
+  
