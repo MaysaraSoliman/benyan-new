@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Title from "antd/es/typography/Title";
 import { StyledSlider } from "./SliderCategory.styled";
+import { useLocale } from "next-intl";
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
@@ -19,6 +20,9 @@ interface MainSliderProps {
 }
 
 const SliderCategory: React.FC<MainSliderProps> = ({ title, data }) => {
+  const locale = useLocale();
+  console.log("locale", locale);
+
   const settings = {
     dots: true,
     speed: 500,
@@ -49,7 +53,7 @@ const SliderCategory: React.FC<MainSliderProps> = ({ title, data }) => {
   };
 
   return (
-    <StyledSlider>
+    <StyledSlider locale={locale}>
       <div className="container">
         <div className="main-title">
           <Title level={2}>{title}</Title>

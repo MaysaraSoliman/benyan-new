@@ -81,5 +81,48 @@ export const StyledSingleProduct = styled.section`
 
   .product-info {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    p {
+      /* font-size: 22px; */
+    }
+    .product-name {
+      font-size: 40px;
+      font-weight: 800;
+    }
+    .product-material {
+    }
+    .product-gemstones {
+    }
+    .product-price {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--color-text-primary2);
+      span {
+        font-size: 20px;
+      }
+    }
+    .details {
+      .title {
+        margin: 15px 0 10px;
+      }
+      .details-list {
+        margin: 15px 0 0 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        li {
+          list-style: circle;
+          span {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    button {
+      background-color: var(--color-primary2);
+      color: var(--color-text-white);
+    }
   }
 `;

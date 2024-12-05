@@ -1,8 +1,11 @@
 "use client";
 
 import styled from "styled-components";
+interface StyledSliderProps {
+  locale: string; // Add locale to control styles
+}
 
-export const StyledJewellerySlider = styled.section`
+export const StyledJewellerySlider = styled.section<StyledSliderProps>`
   background: radial-gradient(
     80.5% 80.5% at 50% 45.25%,
     #efe7dc 0%,
@@ -27,12 +30,27 @@ export const StyledJewellerySlider = styled.section`
   }
 
   .slick-prev {
+    ${(props) =>
+      props.locale === "ar" // Check if the locale is Arabic
+        ? "left: 5%;"
+        : "right: 12%; left: auto;"}
+  }
+
+  /* Handling .slick-next position based on locale */
+  .slick-next {
+    ${(props) =>
+      props.locale === "ar" // Check if the locale is Arabic
+        ? "left: 12%; right: auto;"
+        : "right: 5%;"}
+  }
+
+  /* .slick-prev {
     right: 10%;
     left: auto;
   }
   .slick-next {
     right: 5%;
-  }
+  } */
 
   .slick-prev::before {
     color: #34564e !important;
@@ -74,38 +92,67 @@ export const StyledJewellerySlider = styled.section`
     }
   }
 
+  /* Large screens */
   @media (max-width: 1200px) {
     .slick-prev {
-      right: 12%;
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 5%;"
+          : "right: 12%; left: auto;"}
+    }
+    .slick-next {
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 12%; right: auto;"
+          : "right: 5%;"}
     }
   }
 
+  /* Medium screens */
   @media (max-width: 976px) {
     .slick-prev {
-      right: 15% !important;
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 10%;"
+          : "right: 18%;"}
     }
-
-    .slider-box {
-      height: 450px;
-    }
-  }
-  /* @media (max-width: 976px) {
-    .slick-prev {
-      right: 13%;
-    }
-  } */
-  @media (max-width: 776px) {
-    .slick-prev {
-      right: 18% !important;
-    }
-    .slider-box {
-      height: 400px;
+    .slick-next {
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 18%; right: auto;"
+          : "right: 10%;"}
     }
   }
 
-  @media (max-width: 1200px) {
+  /* Small screens */
+  @media (max-width: 768px) {
     .slick-prev {
-      right: 12%;
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 10%;"
+          : "right: 18%;"}
+    }
+    .slick-next {
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 18%; right: auto;"
+          : "right: 8%;"}
+    }
+  }
+
+  /* Extra small screens */
+  @media (max-width: 560px) {
+    .slick-prev {
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 7%;"
+          : "right: 18%;"}
+    }
+    .slick-next {
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 20%; right: auto;"
+          : "right: 3%;"}
     }
   }
 `;

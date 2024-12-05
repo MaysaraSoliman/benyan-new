@@ -109,12 +109,14 @@ a {
 
 :root {
   --color-primary: #000;
+  --color-primary2: #054e3c;
   --color-secondary: #fff;
   --color-thirdly: #61806A;
   --color-fourthly: #D9BE96;
   --color-text-primary: #fff;
   --color-text-primary2: #054e3c;
   --color-text-black: #000;
+  --color-text-white: #fff;
   --color-text-secondary: #ACACD5;
   --color-text-thirdly: #cf0a0a;
   --color-bg-primary: #fff;

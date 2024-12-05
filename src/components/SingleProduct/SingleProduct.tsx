@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { StyledSingleProduct } from "./SingleProduct.styled";
-import { Image as AntImage } from "antd";
+import { Image as AntImage, Button, Divider } from "antd";
 import { useParams } from "next/navigation";
 
 interface Product {
@@ -75,8 +75,6 @@ const SingleProduct = () => {
   // Ensure that product is not null before accessing images and remove duplicates
   const uniqueImages = Array.from(new Set(product?.images || []));
 
-  console.log("uniqueImages", uniqueImages);
-
   return (
     <StyledSingleProduct>
       <div className="componentsSpaces container">
@@ -122,17 +120,56 @@ const SingleProduct = () => {
 
           {/* Product Details */}
           <div className="product-info">
-            <h3>{product?.name[language]}</h3>
-            <p>{product?.material[language]}</p>
-            <p>{product?.gemstones[language]}</p>
-            <p>
-              Price: {product?.pricing_details.price}{" "}
-              {product?.pricing_details.currency}
+            <h3 className="product-name">{product?.name[language]}</h3>
+            <p className="product-price">
+              {product?.pricing_details.price}{" "}
+              {product?.pricing_details.currency} {"  "}
+              &nbsp;&nbsp;&nbsp;
+              <span>Excluding Taxes</span>
             </p>
+
+            <div className="details">
+              <h3 className="title">Details & Description</h3>
+              <div className="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
+                quam modi. Quos, eveniet. Est quidem at itaque atque quis saepe
+                perferendis pariatur temporibus asperiores nesciunt quo
+                repellat, omnis dolores laboriosam?
+              </div>
+              <ul className="details-list">
+                <li className="product-material">
+                  <span>Material:</span> {product?.material[language]}
+                </li>
+                <li className="product-gemstones">
+                  <span>Gemstone:</span> {product?.gemstones[language]}
+                </li>
+                <li className="product-weight">
+                  <span>Weight:</span> {product?.weight}
+                </li>
+                <li>
+                  <span>Stock Status:</span> {product?.stock_status}
+                </li>
+                <li>
+                  <span>Category: </span>
+                  {product?.category[language]}
+                </li>
+                <li>
+                  <span>Brand: </span> {product?.brand[language]}
+                </li>
+              </ul>
+            </div>
+            <Divider />
+            <Button className="large-btn">ADD TO SHOPPING BAG</Button>
+            {/* <p className="product-material">
+              Material: {product?.material[language]}
+            </p>
+            <p className="product-gemstones">
+              Gemstone: {product?.gemstones[language]}
+            </p>
+            <p className="product-weight">Weight: {product?.weight}</p>
             <p>Stock Status: {product?.stock_status}</p>
             <p>Category: {product?.category[language]}</p>
-            <p>Brand: {product?.brand[language]}</p>
-            <p>Weight: {product?.weight}</p>
+            <p>Brand: {product?.brand[language]}</p> */}
           </div>
         </div>
       </div>

@@ -50,7 +50,7 @@ interface Product {
 const ShopMenu = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [start, setStart] = useState(0); // Track the starting point for fetching products
-  const [limit, setLimit] = useState(12); // Set the initial number of products to load
+  const [limit] = useState(12); // Set the initial number of products to load
   const [loading, setLoading] = useState(false); // Track loading state
   const [hasMoreProducts, setHasMoreProducts] = useState(true); // Track if there are more products
 

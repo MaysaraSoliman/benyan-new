@@ -2,7 +2,11 @@
 
 import styled from "styled-components";
 
-export const StyledSlider = styled.section`
+interface StyledSliderProps {
+  locale: string; // Add locale to control styles
+}
+
+export const StyledSlider = styled.section<StyledSliderProps>`
   padding: 80px 0;
 
   .main-title {
@@ -32,13 +36,29 @@ export const StyledSlider = styled.section`
     opacity: 1;
   }
 
+  /* Handling .slick-prev position based on locale */
   .slick-prev {
+    ${(props) =>
+      props.locale === "ar" // Check if the locale is Arabic
+        ? "left: 5%;"
+        : "right: 12%; left: auto;"}
+  }
+
+  /* Handling .slick-next position based on locale */
+  .slick-next {
+    ${(props) =>
+      props.locale === "ar" // Check if the locale is Arabic
+        ? "left: 12%; right: auto;"
+        : "right: 5%;"}
+  }
+
+  /* .slick-prev {
     right: 10%;
     left: auto;
   }
   .slick-next {
     right: 5%;
-  }
+  } */
 
   .slick-prev::before {
     color: #34564e !important;
@@ -70,7 +90,71 @@ export const StyledSlider = styled.section`
     }
   }
 
+  /* Large screens */
   @media (max-width: 1200px) {
+    .slick-prev {
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 5%;"
+          : "right: 12%; left: auto;"}
+    }
+    .slick-next {
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 12%; right: auto;"
+          : "right: 5%;"}
+    }
+  }
+
+  /* Medium screens */
+  @media (max-width: 976px) {
+    .slick-prev {
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 10%;"
+          : "right: 18%;"}
+    }
+    .slick-next {
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 18%; right: auto;"
+          : "right: 10%;"}
+    }
+  }
+
+  /* Small screens */
+  @media (max-width: 768px) {
+    .slick-prev {
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 10%;"
+          : "right: 18%;"}
+    }
+    .slick-next {
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 18%; right: auto;"
+          : "right: 8%;"}
+    }
+  }
+
+  /* Extra small screens */
+  @media (max-width: 560px) {
+    .slick-prev {
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 7%;"
+          : "right: 18%;"}
+    }
+    .slick-next {
+      ${(props) =>
+        props.locale === "ar" // Check if the locale is Arabic
+          ? "left: 20%; right: auto;"
+          : "right: 3%;"}
+    }
+  }
+
+  /* @media (max-width: 1200px) {
     .slick-prev {
       right: 12%;
     }
@@ -85,7 +169,7 @@ export const StyledSlider = styled.section`
     .slider-box {
       height: 350px;
     }
-  }
+  } */
 `;
 
 // "use client";
