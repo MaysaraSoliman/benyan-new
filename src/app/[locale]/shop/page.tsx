@@ -6,7 +6,7 @@ const ShopPage = () => {
   return (
     <>
       {/* <Hero /> */}
-      <HeroVideo />
+      <HeroVideo videosrc="https://media.bulgari.com/video/upload/f_auto,q_auto/v1733236983/homepage/xmas/24/1-hp-xmas-mobile_tjw0y4.mp4" />
       <ShopMenu />
     </>
   );

@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <HeroVideo />
+      <HeroVideo videosrc="https://media.bulgari.com/video/upload/f_auto,q_auto/v1726652666/hp/tubogas-bzero1/bzero1-1920x1080_gzmwqa.mp4" />
       <JewelleryHomeSlider link="http://localhost:4000/products?category.en=Platinum Jewellery" />
       <MainSlider
         title={"BEST SELLERS"}

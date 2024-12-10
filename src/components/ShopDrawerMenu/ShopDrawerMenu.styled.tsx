@@ -11,4 +11,16 @@ export const StyledShopDrawerMenu = styled.div`
     font-size: 16px;
     font-weight: 600;
   }
+
+  .ant-collapse {
+    border: none;
+  }
+
+  .ant-collapse-item {
+    border: none !important;
+  }
+  .ant-collapse-item > .ant-collapse-header {
+    flex-direction: row-reverse;
+    background-color: white;
+  }
 `;
