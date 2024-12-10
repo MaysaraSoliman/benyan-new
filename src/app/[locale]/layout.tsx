@@ -7,6 +7,8 @@ import { StyledComponentsRegistry } from "@/lib/registry";
 import MainLayout from "../_layout";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { ShoppingCartProvider } from "@/providers/cartProviders/ShoppingCartProvider";
+import { CartDrawerProvider } from "@/context/cartContext/cartDrawerContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -52,7 +54,11 @@ export default async function RootLayout({
           <StyledComponentsRegistry>
             <AntdRegistry>
               <ConfigProvider theme={config} direction={direction}>
-                <MainLayout>{children}</MainLayout>
+                <ShoppingCartProvider>
+                  <CartDrawerProvider>
+                    <MainLayout>{children}</MainLayout>
+                  </CartDrawerProvider>
+                </ShoppingCartProvider>
               </ConfigProvider>
             </AntdRegistry>
           </StyledComponentsRegistry>

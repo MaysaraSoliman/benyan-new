@@ -74,7 +74,7 @@ export const StyledSingleProduct = styled.section`
       }
 
       .active {
-        border: 3px solid #000;
+        border: 3px solid var(--color-thirdly);
       }
     }
   }

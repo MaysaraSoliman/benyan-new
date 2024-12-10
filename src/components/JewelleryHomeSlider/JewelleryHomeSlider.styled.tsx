@@ -79,6 +79,10 @@ export const StyledJewellerySlider = styled.section<StyledSliderProps>`
     left: 0;
   }
 
+  .slick-dots li.slick-active button:before {
+    color: var(--color-primary2) !important;
+  }
+
   .slick-center {
     .jewellery-image {
       width: 100%;

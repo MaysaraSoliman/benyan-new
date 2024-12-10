@@ -111,6 +111,7 @@ a {
   --color-primary: #000;
   --color-primary2: #054e3c;
   --color-secondary: #fff;
+  --color-secondary2: #3c564e;
   --color-thirdly: #61806A;
   --color-fourthly: #D9BE96;
   --color-text-primary: #fff;
@@ -169,13 +170,20 @@ a {
 }
 
 .ant-drawer {
-  z-index: 99999;
+  z-index: 999999999999 !important;
 }
 
 .ant-typography {
   z-index: 2;
 }
 
+.ant-image-preview-root {
+  z-index: 9999999999999 !important;
+}
+
+.ant-image-preview-operations-wrapper {
+  z-index: 999999999999999 !important;
+}
 
 .ant-image-preview-root .ant-image-preview-mask {
   background-color: rgb(0 0 0 / 75%) !important;
@@ -190,6 +198,8 @@ a {
 
 .ant-image-preview-content {
   height: 100%;
+  z-index: 9999999999999999999999999999999999999999999 !important;
+
 }
 
 .ant-image-preview-img {
@@ -201,10 +211,15 @@ a {
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
   pointer-events: auto;
   padding: 20px 24px;
+
 }
 
 .home-hero-overlay {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 28.31%, rgba(0, 0, 0, 0.00) 56.31%);
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--color-primary2) !important;
 }
 
 h1 {

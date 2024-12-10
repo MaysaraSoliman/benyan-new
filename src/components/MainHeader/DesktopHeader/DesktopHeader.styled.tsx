@@ -11,6 +11,7 @@ export const StyledDesktopHeader = styled.div`
     .icon {
       font-size: 22px;
       color: var(--color-icons-primary);
+      cursor: pointer;
     }
     .icons-col {
       .icons {

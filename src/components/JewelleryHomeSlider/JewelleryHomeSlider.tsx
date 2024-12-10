@@ -13,6 +13,7 @@ import Image from "next/image";
 
 import { Link } from "@/i18n/routing";
 import { useLocale } from "next-intl";
+import Title from "antd/es/typography/Title";
 
 // Dynamically import react-slick with SSR disabled
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
@@ -86,6 +87,9 @@ const JewelleryHomeSlider = ({ link }: JewelleryHomeSliderProps) => {
                   width={400}
                   height={400}
                 />
+                <Title className="item-title" level={3}>
+                  {product.name.en}
+                </Title>
                 {/* <Title className="item-title" level={3}>
                   {product.name.en}
                 </Title>
