@@ -46,7 +46,30 @@ interface Product {
   images: string[];
   created_at: string;
 }
-const ShopMenu = () => {
+
+// const categories = [
+//   { label: "Pearl Jewellery", value: "Pearl Jewellery" },
+//   { label: "Diamond Jewellery", value: "Diamond Jewellery" },
+//   { label: "Gold Jewellery", value: "Gold Jewellery" },
+//   { label: "Silver Jewellery", value: "Silver Jewellery" },
+//   { label: "Platinum Jewellery", value: "Platinum Jewellery" },
+// ];
+
+interface ShopMenuProps {
+  subTitle?: string;
+  title: string;
+  url: string;
+  categories?: { label: string; value: string }[];
+  materials?: { label: string; value: string }[];
+}
+
+const ShopMenu: React.FC<ShopMenuProps> = ({
+  subTitle,
+  title,
+  url,
+  categories,
+  materials,
+}) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [start, setStart] = useState(0); // Track the starting point for fetching products
   const [limit] = useState(12); // Set the initial number of products to load
@@ -89,18 +112,24 @@ const ShopMenu = () => {
 
   const fetchProducts = () => {
     setLoading(true);
+    let apiUrl = `${url}${
+      url.includes("?") ? "&" : "?"
+    }_start=${start}&_limit=${limit}`;
+    console.log("apiUrl ===>", apiUrl);
+    // url = `${url}?_start=${start}&_limit=${limit}`;
+    // console.log("url ===>", url);
     const { category, sort, priceRange, material } = filters;
-    let url = `http://localhost:4000/products?_start=${start}&_limit=${limit}`;
-    if (category) url += `&category.en=${category}`;
-    if (material) url += `&material.en=${material}`;
+    // let url = `http://localhost:4000/products?_start=${start}&_limit=${limit}`;
+    if (category) apiUrl += `&category.en=${category}`;
+    if (material) apiUrl += `&material.en=${material}`;
     if (priceRange) {
-      url += `&pricing_details.price_gte=${priceRange[0]}&pricing_details.price_lte=${priceRange[1]}`;
+      apiUrl += `&pricing_details.price_gte=${priceRange[0]}&pricing_details.price_lte=${priceRange[1]}`;
     }
     if (sort) {
       if (sort === "priceLowToHigh")
-        url += `&_sort=pricing_details.price&_order=asc`;
+        apiUrl += `&_sort=pricing_details.price&_order=asc`;
       if (sort === "priceHighToLow")
-        url += `&_sort=pricing_details.price&_order=desc`;
+        apiUrl += `&_sort=pricing_details.price&_order=desc`;
     }
 
     // fetch(url)
@@ -151,7 +180,7 @@ const ShopMenu = () => {
     //   })
     //   .catch(() => setLoading(false));
 
-    fetch(url)
+    fetch(apiUrl)
       .then((response) => response.json())
       .then((json) => {
         //************* START This is Temporary now but change when make the backend , then delete this code **************** */
@@ -226,10 +255,14 @@ const ShopMenu = () => {
       <div className="componentsSpaces container">
         <div className="head-container">
           <div className="head-info">
-            <h5 className="sub-title">Jewelry</h5>
-            <h2 className="title">Shop</h2>
+            <h5 className="sub-title">{subTitle}</h5>
+            <h2 className="title">{title}</h2>
           </div>
-          <ShopDrawerMenu onFilterChange={handleFilterChange} />
+          <ShopDrawerMenu
+            onFilterChange={handleFilterChange}
+            categories={categories}
+            materials={materials}
+          />
         </div>
         <div className="shop-products-container">
           <Row gutter={[16, 16]}>

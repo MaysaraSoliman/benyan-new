@@ -1,22 +1,21 @@
 import HeroVideo from "@/components/HeroVideo/HeroVideo";
 import ShopMenu from "@/components/ShopMenu/ShopMenu";
-import { categories, materials } from "@/components/ShopMenu/ShopMenu.constant";
+import { categories } from "@/components/ShopMenu/ShopMenu.constant";
 import React from "react";
 
-const ShopPage = () => {
+const EaringsPage = () => {
   return (
     <>
       {/* <Hero /> */}
       <HeroVideo videosrc="https://media.bulgari.com/video/upload/f_auto,q_auto/v1733236983/homepage/xmas/24/1-hp-xmas-mobile_tjw0y4.mp4" />
       <ShopMenu
         subTitle="Jewellery"
-        title="Shop"
-        url="http://localhost:4000/products"
+        title="Earings"
+        url="http://localhost:4000/products?material.en=Earing"
         categories={categories}
-        materials={materials}
       />
     </>
   );
 };
 
-export default ShopPage;
+export default EaringsPage;

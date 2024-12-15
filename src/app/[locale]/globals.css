@@ -192,6 +192,21 @@ a {
   padding: 24px 24px !important;
 }
 
+
+.header-drawer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header-drawer ul li a {
+  color: #000;
+}
+
+.header-drawer .brands .brand-item a {
+  color: #000;
+}
+
 .shop-drawer .ant-drawer-title {
   font-size: 20px !important;
 }
@@ -405,6 +420,7 @@ button {
   background-image: radial-gradient(at center, #1f1818c2 0%, var(--color-bg-primary) 100%);
 }
 
+
 @media (max-width: 768px) {
   h1 {
     font-size: 28px !important;
@@ -424,6 +440,12 @@ button {
 
   .componentsSpaces {
     padding: 40px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-drawer .drawer-container .brands {
+    margin-top: 20px;
   }
 }
 
